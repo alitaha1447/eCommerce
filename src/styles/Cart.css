@@ -1,0 +1,31 @@
+ .bgCartColor{
+  background-color: antiquewhite;
+ }
+ .CartTop{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 1px solid black;
+ }
+ .CartTop>p:nth-child(1){
+  align-items: end;
+ }
+ .disabled-button{
+  pointer-events: none;
+  opacity: 0.5; 
+  cursor: not-allowed;
+ }
+ .cartPrice {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  height: 100%; 
+}
+.CartBottom{
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: end;
+}
+.totalPrice>span{
+  font-size: 18px;
+}

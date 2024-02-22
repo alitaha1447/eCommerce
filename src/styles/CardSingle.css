@@ -1,0 +1,60 @@
+/* .cardImgSingle{
+  background-color: rgb(185, 241, 223);
+} */
+.cardImgSingle>.itemIimg{
+  max-height: 550px;
+   width: 100%;
+    object-fit: contain;
+    padding: 25px;
+}
+.itemPrice{
+  font-size: 28px;
+}
+.itemPrice>p{
+  color: #007185;
+}
+
+.itemDelivery{
+  font-size: 18px;
+}
+.itemDelivery>span{
+  font-weight: 700;
+}
+.rightCardSingle-bottom{
+  border-bottom: 1px solid black;
+}
+.itemTitle{
+  font-size: 24px;
+  line-height: 32px;
+}
+.itemDesc{
+  font-size: 18px;
+}
+.cardSingleBox{
+  border: 1px solid rgb(139, 138, 138);
+  border-radius: 5px;
+}
+.cardSingleBox>div:nth-child(1){
+  padding: 10px;
+}
+.singleCardBtn{
+  display: flex;
+  flex-direction: column;
+}
+.singleCardBtn>button:nth-child(1){
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(247, 189, 82);
+}
+.singleCardBtn>button:nth-child(2){
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: orange;
+
+}
