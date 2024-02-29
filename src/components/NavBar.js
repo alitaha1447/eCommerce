@@ -23,7 +23,8 @@ function NavBar({ handleClick, handleSearch, size }) {
   }
 
   const handleChangeCart = () => {
-    handleClick(false)
+    handleClick(false);
+    // alert('hi')
   }
   return (
     <>

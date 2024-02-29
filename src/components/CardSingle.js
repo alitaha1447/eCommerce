@@ -8,9 +8,10 @@ import StarRatings from 'react-star-ratings';
 
 
 
-function CardSingle() {
+function CardSingle({ handleClickCart1 }) {
   const [item, setItem] = useState({});
   const { id } = useParams();
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,6 +26,10 @@ function CardSingle() {
 
     fetchData();
   }, [id]);
+
+  const handleChangeCart = (items) => {
+    handleClickCart1(items)
+  }
 
   return (
     <>
@@ -73,7 +78,7 @@ function CardSingle() {
                   <p>Heart Beat Gallery</p>
                 </div>
                 <div className='singleCardBtn'>
-                  <button className='btn btn-warning'>Add to Cart</button>
+                  <button className='btn btn-warning' onClick={() => handleChangeCart(item)}>Add to Cart</button>
                   <button>Buy Now</button>
                 </div>
               </div>
